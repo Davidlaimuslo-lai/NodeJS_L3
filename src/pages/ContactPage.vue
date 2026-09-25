@@ -68,16 +68,25 @@ function kirimPesan(event) {
 <style scoped>
 .Judul {
   text-align: center;
-  padding: 40px;
+  padding: 40px 20px;
   background: linear-gradient(90deg, #315a91, #36b5e8);
   color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
 }
+
+/* CONTAINER */
 .contact-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
-  padding: 30px 50px;
+  gap: 50px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 0;
   box-sizing: border-box;
 }
 
@@ -91,48 +100,98 @@ function kirimPesan(event) {
   width: 45%;
 }
 
-/* Supaya form berada di tengah area kanan */
+/* FORM */
 .form-kontak form {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .form-kontak input,
 .form-kontak textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
   box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
 .form-kontak textarea {
-  height: 80px;
+  height: 100px;
+  resize: vertical;
+}
+
+/* TOMBOL */
+.btn-grad {
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  margin: 20px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to right, #31546b, #20a9df);
+  border-radius: 15px;
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
 .form-kontak button {
-  width: fit-content;
-  padding: 5px 15px;
-  align-self: center;
-}
-.btn-grad {
-        width: 300px;
-        height: 50px;
-        margin: 20px auto;
-  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background: linear-gradient(to right, #31546b, #20a9df);
-        border-radius: 15px;
-
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  width: auto;
+  padding: 8px 25px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-.btn-grad a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
+
+/* =========================
+   TAMPILAN HP
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .Judul {
+    width: 90%;
+    padding: 30px 15px;
+    margin: 15px auto;
+  }
+
+  .Judul h1 {
+    font-size: 28px;
+  }
+
+  .contact-container {
+    width: 90%;
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .info-kontak,
+  .form-kontak {
+    width: 100%;
+  }
+
+  .form-kontak form {
+    width: 100%;
+    max-width: none;
+  }
+
+  .form-kontak input,
+  .form-kontak textarea {
+    width: 100%;
+  }
+
+  .btn-grad {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 </style>
