@@ -1,37 +1,45 @@
 @import './base.css';
 
-#app {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 20px;
-  font-weight: normal;
-  background-color: white;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: white;
   color: black;
 }
 
-a,
-.green {
+#app {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  transition: 0.4s;
-  padding: 3px; 
 }
 
-@media (hover: hover) {
-  a:hover {
-    box-shadow: 10px;
-  }
-} 
-@media (max-width: 900px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* Laptop / Desktop */
+@media (min-width: 769px) {
+  #app {
+    width: 100%;
   }
 }
 
-@media (max-width: 600px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-    padding: 15px;
+/* HP */
+@media (max-width: 768px) {
+  #app {
+    width: 100%;
+    padding: 0;
   }
 }

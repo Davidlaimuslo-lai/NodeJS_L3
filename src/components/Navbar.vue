@@ -18,13 +18,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding: 20px 32px;
   border-bottom: 1px solid #999;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo {
   color: #1f3b5b;
 }
+
 .nav-menu {
   display: flex;
   gap: 20px;

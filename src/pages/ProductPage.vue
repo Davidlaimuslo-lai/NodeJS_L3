@@ -42,23 +42,17 @@ const daftarProduk = [
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 30px;
-}
-
-/* Tablet */
+} 
 @media (max-width: 900px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
+  } 
 }
 
-/* HP */
-@media (max-width: 600px) {
+@media (max-width: 600px) { 
   .product-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr; 
     padding: 15px;
   }
-}
+} 
 </style>
