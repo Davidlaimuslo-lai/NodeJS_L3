@@ -14,7 +14,7 @@ body {
 
 body {
   font-family: Arial, sans-serif;
-  background: white;
+  background-color: white;
   color: black;
 }
 
@@ -27,6 +27,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* Laptop / Desktop */
